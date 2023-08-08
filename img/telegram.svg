@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="_x31_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 428 428" style="enable-background:new 0 0 428 428;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#_x35__1_);}
+	.st1{fill:#B4CFE4;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#D2E6F2;}
+</style>
+<linearGradient id="_x35__1_" gradientUnits="userSpaceOnUse" x1="99.0081" y1="37.0124" x2="329.0081" y2="391.0124">
+	<stop  offset="0" style="stop-color:#42BCE8"/>
+	<stop  offset="1" style="stop-color:#25A9DD"/>
+</linearGradient>
+<circle id="_x35_" class="st0" cx="214" cy="214" r="214"/>
+<path id="_x34_" class="st1" d="M159.2,321c2.3,1,5,0.7,7.1-1.2l36.4-33.4l-36.3-28.5L159.2,321z"/>
+<path id="_x33_" class="st2" d="M310.8,107.7L71.3,202.9c-8.5,3.4-8.2,15.5,0.5,18.4l60.7,20.3L274.3,151c2.7-1.7,5.6,2,3.2,4.2
+	L166.4,257.8v0l36.3,28.5l0,0l0,0l55.8,43.9c8.8,6.9,21.9,2.1,24-8.9l5.4-27.6l34.4-176.4C323.6,110.7,317.1,105.2,310.8,107.7z"/>
+<path id="_x32_" class="st3" d="M166.4,257.8l111.1-102.6c2.4-2.2-0.5-5.9-3.2-4.2l-141.8,90.6l11.3,37.1l11.7,38.2
+	c0.6,2,2,3.4,3.8,4.2L166.4,257.8L166.4,257.8z"/>
+</svg>

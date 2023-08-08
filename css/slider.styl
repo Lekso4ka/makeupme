@@ -1,0 +1,80 @@
+.slider-container
+    width 100%
+    max-width 1600px
+    margin 0 auto
+    box-sizing content-box
+    position relative
+    height 100vh
+    max-height 900px
+.portfolio-container
+    .slider-container
+        max-height initial
+        height initial
+    .slider-item
+        background transparent
+        height initial
+        max-height initial
+.slider-item
+    height 100vh
+    max-height 900px
+    background no-repeat center 0 / cover
+    &.item-1
+        background-image url(img/photo/IMG_2510w.jpg)
+    &.item-2
+        background-image url(img/photo/IMG_3869-1w.jpg)
+    &.item-3
+        background-image url(img/photo/IMG_1595w.jpg)
+    &.item-4
+        background-image url(img/photo/IMG_0236w.jpg)
+    &.item-5
+        background-image url(img/photo/IMG_1350w.jpg)
+.slick-arrow
+    padding 0
+    font-size 0
+    position absolute
+    height 90px
+    width 45px
+    background transparent url(img/arrow.svg) no-repeat center center / contain
+    top calc(50% - 45px)
+    z-index 100
+    cursor pointer
+    border none
+    outline none
+    opacity .7
+.slick-arrow:hover
+.slick-arrow:focus
+.slick-arrow:active
+    opacity 1
+    color transparent
+    outline none
+.slick-prev
+    left 30px
+    transform scale(-1,1)
+.slick-next
+    right 30px
+.slick-dots
+    display flex
+    justify-content center
+    align-items center
+    position absolute
+    z-index 100
+    bottom 0
+    height 40px
+    width 100%
+    text-align center
+    font-size 0
+    background rgba(255,255,255,.5)
+    button
+        width 8px
+        height 8px
+        background transparent
+        border-radius 50%
+        border 1px solid #fff
+        padding 0
+        font-size 0
+        margin 0 4px
+        cursor pointer
+        outline none
+    .slick-active
+        button
+            background #fff

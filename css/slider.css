@@ -1,0 +1,71 @@
+.slider-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #f00;
+  box-sizing: content-box;
+  position: relative;
+  height: 100vh;
+  max-height: 750px;
+}
+.slider-item {
+  height: 100vh;
+  max-height: 750px;
+  background: url("img/photo/slider.png") no-repeat center center/cover;
+}
+.slick-arrow {
+  padding: 0;
+  font-size: 0;
+  position: absolute;
+  height: 90px;
+  width: 45px;
+  background: transparent url("img/arrow.svg") no-repeat center center/contain;
+  top: calc(50% - 45px);
+  z-index: 100;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  opacity: 0.7;
+}
+.slick-arrow:hover,
+.slick-arrow:focus,
+.slick-arrow:active {
+  opacity: 1;
+  color: transparent;
+  outline: none;
+}
+.slick-prev {
+  left: 30px;
+  transform: scale(-1, 1);
+}
+.slick-next {
+  right: 30px;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  background: rgba(255,255,255,0.5);
+}
+.slick-dots button {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 0;
+  font-size: 0;
+  margin: 0 4px;
+  cursor: pointer;
+  outline: none;
+}
+.slick-dots .slick-active button {
+  background: #fff;
+}

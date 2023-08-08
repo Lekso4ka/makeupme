@@ -1,0 +1,95 @@
+-let path = "../"
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+        title Визажист, свадебный стилист, парикмахер. Москва, МО.
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
+        link(rel="stylesheet" href=path + "style.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script.
+            $(function() {
+                $("#tabs").tabs();
+            });
+        script(src=path + "script.js")
+
+    body
+        .wrapper
+            include ../templates/header
+            .portfolio-container#tabs
+                ul
+                    li
+                        a(href="#all") Все
+                    li
+                        a(href="#weeding") Свадьба
+                    li
+                        a(href="#evening") Вечер
+                    li
+                        a(href="#school") Выпускной
+                    li
+                        a(href="#special") Специальные
+                #all
+                    .slider-container.slider-all
+                        img(src=path + "img/photo/IMG_9898w.jpg")
+                #weeding
+                    .slider-container.slider-weeding
+                        img(src=path + "img/photo/IMG_7661w.jpg")
+                #evening
+                    .slider-container.slider-evening
+                        img(src=path + "img/photo/IMG_1350w.jpg")
+                #school
+                    .slider-container.slider-school
+                        img(src=path + "img/photo/mr59kE562Q4.jpg")
+                #special
+                    .slider-container.slider-special
+                        img(src=path + "img/photo/IMG_1128w.jpg")
+
+
+
+
+
+
+            include ../templates/footer
+
+        //script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        //script.
+        //    let tabs = document.getElementById("tabs");
+        //    for (let k in photos) {
+        //        let block = document.createElement("div");
+        //        block.id = k;
+        //        let container = document.createElement("div");
+        //        container.classList.add("slider-container");
+        //        container.classList.add(`slider-${k}`);
+        //        for (let i = 0; i < photos[k].length; i++) {
+        //            let div = document.createElement("div");
+        //            div.className = "slider-item";
+        //            div.innerHTML = `<img src="../img/photo/${photos[k][i]}.jpg" alt="${k}">`;
+        //            container.appendChild(div);
+        //        }
+        //        block.appendChild(container)
+        //        tabs.appendChild(block);
+                // $(`.slider-${k}`).slick({
+                //     dots: true,
+                //     slidesToShow: 1
+                // });
+        //}
+
+        // $(".slider-weeding").slick({
+        //     dots: true,
+        //     slidesToShow: 1
+        // });
+        // $(".slider-evening").slick({
+        //     dots: true,
+        //     slidesToShow: 1
+        // });
+        // $(".slider-school").slick({
+        //     dots: true,
+        //     slidesToShow: 1
+        // });
+        // $(".slider-special").slick({
+        //     dots: true,
+        //     slidesToShow: 1
+        // });

@@ -1,0 +1,46 @@
+footer
+    .feedback-container
+        h2 Остались вопросы?
+        p Напишите мне письмо — я обязательно на него отвечу!
+        form(action="order.php" method="POST")
+            table
+                tr
+                    td Вас зовут:
+                    td
+                        input(type="text" name="ppl_name" placeholder="Маргарита" required)
+                tr
+                    td Ваша почта:
+                    td
+                        input(type="email" name="ppl_mail" placeholder="margo@site.ru" required)
+                tr
+                    td Ваш телефон
+                    td
+                        input(type="tel" name="ppl_tel" placeholder="+7 900 123-45-67" required)
+                tr
+                    td Сообщение
+                    td
+                        textarea(name="ppl_msg")
+                tr
+                    td
+                    td.align-right
+                        input.btn(type="submit" name="submit" value="Отправить")
+
+    .social-container
+        .social-container_col
+            p &copy; 2014-2019 Сурначева Екатерина, визажист-стилист
+            .petite
+                a(href="https://petiteweb.ru")
+                    | Сайт разработан студией
+                    | &nbsp;
+                    img(src="http://petiteweb.ru/pw_logo/logo_dbg2.svg" alt="PetiteWeb")
+        .social-container_col
+            p
+                |Мои аккаунты в соц. сетях
+                |&nbsp;
+                a(href="https://instagram.com/ekaterina_surnacheva")
+                    img(src=path + "img/ico1_instagram.svg" alt="https://instagram.com/ekaterina_surnacheva")
+                |&nbsp;
+                a(href="https://vk.com/club83325026")
+                    img(src=path + "img/ico2_vk.svg" alt="https://vk.com/club83325026")
+
+

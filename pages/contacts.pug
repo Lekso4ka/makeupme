@@ -1,0 +1,44 @@
+-let path = "../"
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+        title Визажист, свадебный стилист, парикмахер. Москва, МО.
+        link(rel="stylesheet" href=path + "style.css")
+    body
+        .wrapper
+            include ../templates/header
+            .contacts-container
+                .sqr-300.round
+                    img.w-200(src=path + "img/kate2.jpg" alt="Сурначева Екатерина")
+                .simple-text
+                    h3 Создам неповторимый образ для любого мероприятия
+                    p.flex
+                        a(href="tel:+79169476466")
+                            img(src=path + "img/phone.svg" alt="Телефон")
+                            | &nbsp;+7(916)947-64-66
+                        | &nbsp;(
+                        img(src=path + "img/telegram.svg" alt="Telegram")
+                        | ,
+                        img(src=path + "img/whatsapp.svg" alt="WhatsApp")
+                        | )
+                    p.flex
+                        a(href="mailto:katena2488@mail.ru")
+                            img(src=path + "img/email.svg" alt="Почта")
+                            | &nbsp;Katena2488@mail.ru
+
+                    p.flex
+                        a(href="https://instagram.com/ekaterina_surnacheva")
+                            img(src=path + "img/instagram.svg" alt="https://instagram.com/ekaterina_surnacheva")
+                            | &nbsp;ekaterina_surnacheva
+                    p.flex
+                        a(href="https://vk.com/club83325026")
+                            img(src=path + "img/vk.svg" alt="https://vk.com/club83325026")
+                            |&nbsp;ekaterina_surnacheva
+                p Моя студия находится по адресу: Москва, Баррикадная улица, 8г
+                p Возле м. Баррикадная есть бесплатная охраняемая парковка;<br> м. Пушкинская / Тверская — платная городская парковка;<br> 4 минуты пешком от метро!
+            .map-container
+                iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Aadf485ffdd707a623142890aa96c9f4eb2b4268ffc46319092dc18f3993a59f7&amp;source=constructor" width="100%" height="450" frameborder="0")
+
+            include ../templates/footer
