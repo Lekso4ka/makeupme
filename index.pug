@@ -1,0 +1,99 @@
+-let path = ""
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+        title Визажист, свадебный стилист, парикмахер.
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
+        link(rel="stylesheet" href="style.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js")
+        script(src="script.js")
+    body
+        .wrapper
+            include templates/header
+            .slider-container
+                .slider-item.item-1
+                .slider-item.item-2
+                .slider-item.item-3
+                .slider-item.item-4
+                .slider-item.item-5
+            .simple-container#about
+                h2 Обо мне
+                img.w-200(src="img/kate1.jpg" alt="Сурначева Екатерина")
+                .simple-text
+                    p Меня зовут Екатерина Сурначева.
+                    p Я профессиональный визажист и стилист причёсок. Выполняю все виды макияжа любой сложности: от дневного до свадебного. Умею как, не считаясь со временем, ювелирно подобрать идеальный образ невесте, так и за несколько часов подготовить к корпоративу всех сотрудниц фирмы. Или целый ансамбль к сцене.
+                    p Многолетний практический опыт и диплом международного Центра Make-Up Atelier Paris.
+                img.w-200(src="img/emblem.svg" alt="Make-Up Atelier Paris")
+            .slogan-container
+                .slogan-item Мое вдохновение — сияющие от восторга лица моих клиентов. Момент, когда они радостно любуются собой в зеркале — бесценен!
+                .slogan-item Запишитесь ко мне на сеанс и мы вместе создадим ваш неповторимый образ. Для любого мероприятия! Будь то свадьба, свидание или фотосессия.
+            .portfolio-container
+                h2 Портфолио
+                .portfolio
+                a.btn(href=path + "pages/portfolio.html") Смотреть больше работ
+            .wedding-container
+                .wedding-container_transparent
+                    .wedding-inner-container
+                        h2 Свадебный макияж
+                        .simple-text
+                            p Свадьба — «звёздный час» любой девушки, один из самых важных и торжественных дней в ее жизни. Как никогда важно выглядеть эффектно, стильно, нарядно.
+                            p Любой невесте нужно ровно три вещи: свадебное платье, свадебный макияж и свадебная прическа. Чтобы снять большинство волнений за свой внешний вид на свадьбе чаще обращаются к свадебным вижистам-стилистам. Рекомендуем делать это уже после покупки свадебного платья, так как именно его цвет и фасон определяет направление работы визажиста-стилиста, который будет подбирать под него макияж и прическу.
+                        .simple-text
+                            p Важно помнить, что визажист дополнительно потребуется и при свадебной фотосессии: яркий свет и фотовспышка требуют особого макияжа. А погода во время свадебных «покатушек» и прогулок может не лучшим образом отразиться на макияже и причёске. Всё это обязывают регулярно подкрашивать губы и поправлять прическу.
+                            p Чтобы невесте не волноваться, хорошо ли смотрится свадебный макияж, удобно доверить эти заботы приглашённому визажисту, а самой наслаждаться днём своего триумфа. Приглашенный специалист также будет контролировать, всё ли в порядке с макияжем подружек невесты и их волосами, так что скучать явно не придётся!
+            .simple-container.align-start
+                h2 Контакты
+                .w-200.h-200.round
+                    img.w-200(src="img/kate2.jpg" alt="Сурначева Екатерина")
+                .simple-text
+                    p
+                        |Екатерина Сурначева, визажист-стилист
+                        br
+                        |Москва (центр и область)
+                        br
+                        |Создам неповторимый образ для любого мероприятияAtelier Paris.
+                    p.flex
+                        a(href="tel:+79169476466")
+                            img(src=path + "img/phone.svg" alt="Телефон")
+                            |&nbsp;+7(916)947-64-66
+                        |&nbsp;(
+                        img(src=path + "img/telegram.svg" alt="Telegram")
+                        |,
+                        img(src=path + "img/whatsapp.svg" alt="WhatsApp")
+                        |)
+                    p.flex
+                        a(href="mailto:katena2488@rambler.ru")
+                            img(src=path + "img/email.svg" alt="Почта")
+                            |&nbsp;Katena2488@rambler.ru
+                    p
+                        |Более подробную информацию читайте в
+                        a(href=path + "pages/contacts.html") &nbsp;разделе Контакты
+                        |.
+                    p
+                        |Прошу ознакомиться с ценами услуг визажиста-стилиста в
+                        a(href=path + "pages/price.html") &nbsp;разделе Цены
+                        |.
+                img.round.w-200(src=path + "img/moscow.svg" alt="Москва")
+            include templates/footer
+
+
+
+
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        script.
+            $(".slider-container").slick({
+                dots: true,
+                slidesToShow: 1
+            });
+            let container = document.getElementsByClassName("portfolio")[0];
+            let innerCnt = Math.floor(container.offsetWidth / 340) + 2;
+            container.parentElement.style.width = (340 * innerCnt) + "px";
+            for (let i = 0; i < innerCnt; i++) {
+                let item = document.createElement("div");
+                item.className="portfolio-item";
+                item.style.backgroundImage = `url(img/photo/${allPhotos[i]}.jpg)`;
+                container.appendChild(item);
+            }
